@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genetic Algorithm Demo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Genetic Algorithm Demo</h1>
+    </header>
+    <main>
+        <section>
+            <p>Welcome to the Genetic Algorithm demo. Explore how genetic algorithms work with interactive examples.</p>
+            <button id="startBtn">Start Simulation</button>
+            <div id="simulationArea"></div>
+        </section>
+    </main>
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('../serviceworker.js')
+                    .then((reg) => console.log('success: ', reg.scope))
+                    .catch((err) => console.log('Failure: ', err))
+            })
+        }
+    </script>
+</body>
+
+</html>
