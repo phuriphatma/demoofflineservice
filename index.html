@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to RealTest</title>
+</head>
+
+<body>
+    <h1>Hello, World!</h1>
+    <p>This is a basic index.html file.</p>
+</body>
+
+
+<script>
+    if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+            navigator.serviceWorker.register('serviceworker.js')
+                .then((reg) => console.log('success: ', reg.scope))
+                .catch((err) => console.log('Failure: ', err))
+        })
+    }
+</script>
+
+
+
+</html>

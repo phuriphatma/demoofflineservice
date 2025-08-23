@@ -1,5 +1,5 @@
-const CACHE_NAME = "version-9"
-const urlsToCache = ['./ga/ga.html']
+const CACHE_NAME = "version-5"
+const urlsToCache = ['index.html']
 
 const self = this
 
